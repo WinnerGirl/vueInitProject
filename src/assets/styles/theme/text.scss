@@ -1,0 +1,40 @@
+@import "../color";
+
+// 单行文本溢出省略号
+.text-el{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+.text-center{
+  text-align: center;
+}
+.text-strong{
+  color: $c-strong-text;
+}
+.text-normal{
+  color: $c-normal-text;
+}
+.text-light{
+  color: $c-light-text;
+}
+.text-underline{
+  text-decoration: underline;
+}
+/*
+* param line 要显示的文本行数，超出省略号
+*/
+@mixin tc($line){
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:$line;
+}

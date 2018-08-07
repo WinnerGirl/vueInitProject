@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" >
+    <title>Vue模板</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script>
+      document.documentElement.style.fontSize = 100 * innerWidth / 750 + 'px' ;
+      addEventListener('load', function () {
+        setTimeout(function () {
+          document.documentElement.style.fontSize = 100 * innerWidth / 750 + 'px' ;
+          window.unit = 100 * innerWidth / 750 ;
+          var e = document.createEvent('Event') ;
+          e.initEvent('adjustReady', true, true);
+          window.dispatchEvent(e);
+        }, 1);
+      });
+      addEventListener('orientationchange', function() {
+        setTimeout(function(){
+          document.documentElement.style.fontSize = 100 * innerWidth / 750 + 'px'
+        }, 1)
+      });
+    </script>
+    <!--<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>-->
+    <!--<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>-->
+  </body>
+</html>

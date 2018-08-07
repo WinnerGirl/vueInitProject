@@ -6,14 +6,17 @@ a vue initial project includes scss slide, loading-bar fetch and common style et
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# serve with hot reload at localhost:1024
 npm run dev
 
-# build for production with minification
-npm run build
+# serve with api localhost:3000
+npm run api
 
-# build for production and view the bundle analyzer report
-npm run build --report
+# build for production in dev environment
+npm run build-dev
+
+# build for production in pro environment
+npm run build-pro
 
 # run unit tests
 npm run unit
